@@ -7,6 +7,6 @@ public class Coordinates {
         System.out.println("Vorontsov Lighthouse coordinates:");
         System.out.println("Latitude: "+doubleLatitude);
         System.out.println("Longitude: "+doubleLongitude);
-        System.out.println("DMS Lat: 46°29'47.5'' N"+"DMS Long: 30°45'34.4'' E");
+        System.out.println("DMS Lat: 46°29'47.5'' N "+"  DMS Long: 30°45'34.4'' E");
     }
 }
