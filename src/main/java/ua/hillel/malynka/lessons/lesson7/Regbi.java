@@ -17,9 +17,9 @@ public class Regbi {
             team2Ages[i] = (int)((Math.random()*(maxPlayersAge-minPlayersAge+1))+minPlayersAge);
             sumAgesTeam2 = sumAgesTeam2+team2Ages[i];
         }
-        System.out.println(Arrays.toString(team1Ages));
-        System.out.println(Arrays.toString(team2Ages));
-        System.out.println((float)sumAgesTeam1/quantityTeamPlayers);
-        System.out.println((float)sumAgesTeam2/quantityTeamPlayers);
+        System.out.println("Вік гравців 1-ої команди"+Arrays.toString(team1Ages));
+        System.out.println("Вік гравців 2-ої команди"+Arrays.toString(team2Ages));
+        System.out.println("Середній Вік гравців 1-ої команди"+(float)sumAgesTeam1/quantityTeamPlayers);
+        System.out.println("Середній Вік гравців 2-ої команди"+(float)sumAgesTeam2/quantityTeamPlayers);
     }
 }
