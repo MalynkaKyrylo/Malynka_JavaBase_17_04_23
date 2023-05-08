@@ -5,26 +5,44 @@ import java.util.Scanner;
 
 public class Matrix {
     public static void main(String[] args) {
-        int M = 0;
-        int N = 0;
+        int m = 0;
+        int n = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Input the number of matrix rows");
-        while (!sc.hasNextInt()) {
-            sc.nextLine();
-            System.out.println("Wrong data! Input the number!");
+        while (true) {
+            if (sc.hasNextInt()) {
+                m = sc.nextInt();
+                if (m < 0) {
+                    System.out.println("Please enter positive number");
+                } else {
+                    break;
+                }
+                sc.nextLine();
+            } else {
+                System.out.println("Wrong data, try again");
+                sc.nextLine();
+            }
         }
-        M = sc.nextInt();
         sc.nextLine();
         System.out.println("Input the number of matrix columns");
-        while (!sc.hasNextInt()) {
-            sc.nextLine();
-            System.out.println("Wrong data! Input the number!");
+        while (true) {
+            if (sc.hasNextInt()) {
+                n = sc.nextInt();
+                if (n < 0) {
+                    System.out.println("Please enter positive number");
+                } else {
+                    break;
+                }
+                sc.nextLine();
+            } else {
+                System.out.println("Wrong data, try again");
+                sc.nextLine();
+            }
         }
-        N = sc.nextInt();
         sc.nextLine();
-        int[][] array = new int[M][N];
-        int[][] arrayTranspon = new int[N][M];
-        System.out.println("Original random matrix size "+M+"x"+N);
+        int[][] array = new int[m][n];
+        int[][] arrayTranspon = new int[n][m];
+        System.out.println("Original random matrix size "+m+"x"+n);
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = (int) (Math.random() * 101);
@@ -34,7 +52,7 @@ public class Matrix {
             System.out.println();
         }
         System.out.println();
-        System.out.println("Transposed matrix size "+N+"x"+M);
+        System.out.println("Transposed matrix size "+n+"x"+m);
         for (int i = 0; i < arrayTranspon.length; i++) {
             for (int j = 0; j < arrayTranspon[i].length; j++) {
                 System.out.print(arrayTranspon[i][j] + "\t");
