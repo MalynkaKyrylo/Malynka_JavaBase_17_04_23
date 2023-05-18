@@ -4,9 +4,12 @@ public class Main {
     public static void main(String[] args) {
 
         Person alex = new Person("Alex", 30);
-        Person alex2 = new Person("Alex");
+        Person alex2 = new Person("John");
+        Person alex3 = new Person("Den", 20);
 
         System.out.println(alex);
+        System.out.println(alex2);
+        System.out.println(alex3);
 
 
 //        Person oleg = new Person();
@@ -25,4 +28,5 @@ public class Main {
 //        oleg.sayHello();
 //        oleg.printAge();
 
+    }
 }
