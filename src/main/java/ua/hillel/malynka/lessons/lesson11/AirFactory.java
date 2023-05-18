@@ -1,4 +1,4 @@
-package ua.hillel.malynka.lessons.lessson11;
+package ua.hillel.malynka.lessons.lesson11;
 
 public class AirFactory {
     //        Фабрика літаків

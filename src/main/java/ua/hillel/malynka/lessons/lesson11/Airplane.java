@@ -1,4 +1,4 @@
-package ua.hillel.malynka.lessons.lessson11;
+package ua.hillel.malynka.lessons.lesson11;
 
 public class Airplane {
     String type;
@@ -37,6 +37,5 @@ public class Airplane {
                 + " кільк. пасажирів 1 класу: " + this.firstClassPassengers
                 + " кільк. пасажирів 2-го класу: " + this.secondClassPassengers);
     }
-
 
 }
